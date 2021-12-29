@@ -27,4 +27,4 @@ jobs:
       - name: Execute Power Shell
         shell: pwsh
         run: |
-             .\Runbook\DeployRunBook.ps1 'neu-demo-wu2-da-aa-01' 'neu-data-ai-platform-demo-rg' 'neu-demo-wu2-da-syn-01' 'neudemowu2dapool01' 'neudemowu2dasql01.database.windows.net' 'neudemodawu2aas01' 'neu-demo-wu2-da-kv-01'
+             .\Runbook\DeployRunBook.ps1 'mm212912aa' 'mm212912' 'neu-demo-wu2-da-syn-01' 'neudemowu2dapool01' 'neudemowu2dasql01.database.windows.net' 'neudemodawu2aas01' 'neu-demo-wu2-da-kv-01'
