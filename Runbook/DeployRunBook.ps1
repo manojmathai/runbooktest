@@ -53,7 +53,7 @@ Function ScheduleAnalysisServices($automationAccountName, $runbookName, $resourc
 		$startTime = (Get-Date).AddMinutes(7)
 		New-AzAutomationSchedule -AutomationAccountName $automationAccountName -Name $AASscheduleName -StartTime $startTime -ResourceGroupName $resourceGroupName -HourInterval 3
 		Write-Host "Completed adding schedule $AASscheduleName ."
-		Register-AzAutomationScheduledRunbook -AutomationAccountName $automationAccountName -Name $runbookName -ScheduleName $AASscheduleName -Parameters $params -ResourceGroupName $resourceGroupName
+		#Register-AzAutomationScheduledRunbook -AutomationAccountName $automationAccountName -Name $runbookName -ScheduleName $AASscheduleName -Parameters $params -ResourceGroupName $resourceGroupName
 		Write-Host "Completed linking runbook $runbookName to schedule $AASscheduleName ."
 	}
 }
